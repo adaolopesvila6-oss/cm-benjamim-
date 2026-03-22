@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="theme-color" content="#1F3864"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-title" content="CM Benjamim"/>
+<title>CM Revº. Benjamim Manuel</title>
+<link rel="manifest" href="manifest.json"/>
+<style>*{box-sizing:border-box;margin:0;padding:0}body{background:#1F3864;display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Segoe UI',sans-serif}#app{background:#fff;border-radius:16px;padding:32px 24px;text-align:center;max-width:360px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.4)}.titulo{color:#1F3864;font-size:18px;font-weight:800;font-family:Georgia,serif;margin-bottom:6px}.sub{color:#888;font-size:13px;margin-bottom:20px}#msg{color:#555;font-size:13px}.spin{width:36px;height:36px;border:3px solid #e0e0e0;border-top:3px solid #1F3864;border-radius:50%;animation:spin 0.8s linear infinite;margin:16px auto}@keyframes spin{to{transform:rotate(360deg)}}</style>
+</head>
+<body>
+<div id="app">
+<svg viewBox="0 0 200 230" width="64" height="64" style="margin-bottom:12px"><path d="M68 222 C54 194 22 176 20 144 C18 116 38 104 44 82 C49 63 40 46 47 30 C54 14 70 7 79 0 C72 20 76 36 84 50 C90 62 88 73 83 87 C77 105 65 116 67 138 C69 156 83 167 88 185 C93 198 91 212 87 224 Z" fill="#D32F2F"/><rect x="102" y="12" width="20" height="206" rx="3" fill="#1F3864"/><rect x="70" y="70" width="116" height="20" rx="3" fill="#1F3864"/></svg>
+<div class="titulo">CM Revº. Benjamim Manuel</div>
+<div class="sub">Igreja Metodista Unida</div>
+<div id="msg">A carregar...</div>
+<div class="spin"></div>
+</div>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+<script>if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js'));</script>
+<script type="text/babel" src="app.js"></script>
+</body>
+</html>
